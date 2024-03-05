@@ -13,6 +13,8 @@
 		319BE2082B9773FE005C4BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319BE2062B9773FE005C4BBE /* Main.storyboard */; };
 		319BE20A2B977400005C4BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319BE2092B977400005C4BBE /* Assets.xcassets */; };
 		319BE20D2B977400005C4BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319BE20B2B977400005C4BBE /* LaunchScreen.storyboard */; };
+		319BE2152B977453005C4BBE /* TipsyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BE2142B977453005C4BBE /* TipsyBrain.swift */; };
+		319BE21A2B9774AC005C4BBE /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BE2192B9774AC005C4BBE /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		319BE2092B977400005C4BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		319BE20C2B977400005C4BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		319BE20E2B977400005C4BBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		319BE2142B977453005C4BBE /* TipsyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyBrain.swift; sourceTree = "<group>"; };
+		319BE2192B9774AC005C4BBE /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				319BE2002B9773FE005C4BBE /* AppDelegate.swift */,
 				319BE2022B9773FE005C4BBE /* SceneDelegate.swift */,
-				319BE2042B9773FE005C4BBE /* ViewController.swift */,
-				319BE2062B9773FE005C4BBE /* Main.storyboard */,
+				319BE2172B977466005C4BBE /* Models */,
+				319BE2162B977459005C4BBE /* Controllers */,
+				319BE2182B977476005C4BBE /* Views */,
 				319BE2092B977400005C4BBE /* Assets.xcassets */,
-				319BE20B2B977400005C4BBE /* LaunchScreen.storyboard */,
 				319BE20E2B977400005C4BBE /* Info.plist */,
 			);
 			path = MyTipsyApp;
+			sourceTree = "<group>";
+		};
+		319BE2162B977459005C4BBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				319BE2042B9773FE005C4BBE /* ViewController.swift */,
+				319BE2192B9774AC005C4BBE /* ResultViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		319BE2172B977466005C4BBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				319BE2142B977453005C4BBE /* TipsyBrain.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		319BE2182B977476005C4BBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				319BE2062B9773FE005C4BBE /* Main.storyboard */,
+				319BE20B2B977400005C4BBE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319BE21A2B9774AC005C4BBE /* ResultViewController.swift in Sources */,
+				319BE2152B977453005C4BBE /* TipsyBrain.swift in Sources */,
 				319BE2052B9773FE005C4BBE /* ViewController.swift in Sources */,
 				319BE2012B9773FE005C4BBE /* AppDelegate.swift in Sources */,
 				319BE2032B9773FE005C4BBE /* SceneDelegate.swift in Sources */,
@@ -298,8 +330,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +340,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PavelShirokiy.MyTipsyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,8 +363,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +373,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PavelShirokiy.MyTipsyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
