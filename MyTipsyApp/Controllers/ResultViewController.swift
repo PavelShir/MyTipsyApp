@@ -10,9 +10,7 @@ import UIKit
 class ResultViewController: UIViewController {
 
     @IBOutlet var totalPerPersonLbl: UILabel!
-    
     @IBOutlet var resultLabel: UILabel!
-    
     
     
     override func viewDidLoad() {
@@ -22,6 +20,7 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func RecalculateButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
     /*

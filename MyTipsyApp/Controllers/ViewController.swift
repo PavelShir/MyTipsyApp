@@ -9,16 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let tipsyBrain = TipsyBrain()
+    
     @IBOutlet var amountTextField: UITextField!
     @IBOutlet var splitPerson: UILabel!
     
-    @IBOutlet var tenPercentLabel: UIButton!
-    @IBOutlet var fifteenPercentLabel: UIButton!
-    @IBOutlet var twentyPercentLabel: UIButton!
+    @IBOutlet var tenPercent: UIButton!
+    @IBOutlet var fifteenPercent: UIButton!
+    @IBOutlet var twentyPercent: UIButton!
     
     
     @IBAction func percentButtonPressed(_ sender: UIButton) {
         
+        let percent = sender.currentTitle ?? "10 %"
+        tipsyBrain.getColor(percent, tenPercent: tenPercent, fifteenPercent: fifteenPercent, twentyPercent: twentyPercent)
     }
     
     @IBAction func stepperPressed(_ sender: UIStepper) {
@@ -26,7 +30,13 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calulateButtonPressed(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "GoToResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "GoToResult" {
+            guard let resultVC = segue.destination as? ResultViewController else { return }
+        }
     }
 }
 

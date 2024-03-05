@@ -193,10 +193,10 @@
                     </view>
                     <connections>
                         <outlet property="amountTextField" destination="p51-BQ-eP9" id="a1E-1R-4r2"/>
-                        <outlet property="fifteenPercentLabel" destination="NTr-sN-omt" id="c6m-9B-Mn5"/>
+                        <outlet property="fifteenPercent" destination="NTr-sN-omt" id="c6m-9B-Mn5"/>
                         <outlet property="splitPerson" destination="ThU-Oh-AsF" id="0ei-gL-5Mx"/>
-                        <outlet property="tenPercentLabel" destination="pqA-aH-UOg" id="nrZ-ub-YNc"/>
-                        <outlet property="twentyPercentLabel" destination="a8V-vd-Qzc" id="TyN-Qz-oBk"/>
+                        <outlet property="tenPercent" destination="pqA-aH-UOg" id="nrZ-ub-YNc"/>
+                        <outlet property="twentyPercent" destination="a8V-vd-Qzc" id="TyN-Qz-oBk"/>
                         <segue destination="JxB-ym-vej" kind="presentation" identifier="GoToResult" id="iAK-zz-C9I"/>
                     </connections>
                 </viewController>
