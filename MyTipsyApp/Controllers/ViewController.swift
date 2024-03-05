@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let tipsyBrain = TipsyBrain()
+    var tipsyBrain = TipsyBrain()
     
     @IBOutlet var amountTextField: UITextField!
     @IBOutlet var splitPerson: UILabel!
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func stepperPressed(_ sender: UIStepper) {
-        
+        tipsyBrain.getStepperValue(sender.value, label: splitPerson)
     }
     
     @IBAction func calulateButtonPressed(_ sender: UIButton) {

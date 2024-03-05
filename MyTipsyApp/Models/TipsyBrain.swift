@@ -11,7 +11,7 @@ struct TipsyBrain {
     
     let percentColor = UIColor(red: 250/255, green: 163/255, blue: 0/255, alpha: 1)
     let percentButtonLabel = ["10 %", "15 %", "20 %"]
-    
+    var stepperValue: Int?
     
     func getColor(_ sender: String, tenPercent: UIButton, fifteenPercent: UIButton, twentyPercent: UIButton) {
         switch sender {
@@ -28,6 +28,11 @@ struct TipsyBrain {
             fifteenPercent.backgroundColor = .clear
             twentyPercent.backgroundColor = percentColor
         }
+    }
+    
+    mutating func getStepperValue(_ sender: Double, label: UILabel) {
+        stepperValue = Int(sender)
+        label.text = "\(stepperValue ?? 0)"
     }
     
     
