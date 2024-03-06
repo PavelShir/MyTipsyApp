@@ -12,11 +12,15 @@ class ResultViewController: UIViewController {
     @IBOutlet var totalPerPersonLbl: UILabel!
     @IBOutlet var resultLabel: UILabel!
     
+    var resultValue: Double?
+    var resultExplanation: String?
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        totalPerPersonLbl.text = String(format: "%.2f", resultValue ?? 0)
+        resultLabel.text = resultExplanation ?? "All for one! :)"
     }
     
     @IBAction func RecalculateButtonPressed(_ sender: UIButton) {

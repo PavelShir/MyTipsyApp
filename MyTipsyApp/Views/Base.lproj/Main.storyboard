@@ -58,12 +58,31 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="L0e-RH-6VW">
-                                                <rect key="frame" x="36" y="50" width="323" height="54"/>
+                                                <rect key="frame" x="39.666666666666657" y="50" width="315.66666666666674" height="54"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqA-aH-UOg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="54"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="hJz-Bs-VW6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="5 %"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="percentButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="447-M4-8XP"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-sN-omt">
+                                                        <rect key="frame" x="105" y="0.0" width="84" height="54"/>
+                                                        <color key="backgroundColor" red="0.98039215690000003" green="0.63921568630000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="vMH-rH-WXE"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -75,37 +94,18 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                         <connections>
-                                                            <action selector="percentButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="447-M4-8XP"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTr-sN-omt">
-                                                        <rect key="frame" x="120" y="0.0" width="79" height="54"/>
-                                                        <color key="backgroundColor" red="0.98039215690000003" green="0.63921568630000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="vMH-rH-WXE"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="15 %"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <integer key="value" value="15"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
                                                             <action selector="percentButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JRh-aY-ahu"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8V-vd-Qzc">
-                                                        <rect key="frame" x="239" y="0.0" width="84" height="54"/>
+                                                        <rect key="frame" x="229.00000000000003" y="0.0" width="86.666666666666657" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="IPi-jn-i7G"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                        <state key="normal" title="20 %"/>
+                                                        <state key="normal" title="15 %"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <integer key="value" value="15"/>
@@ -216,7 +216,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total per person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isq-Qf-0td">
-                                        <rect key="frame" x="93.666666666666671" y="132" width="205.66666666666663" height="36"/>
+                                        <rect key="frame" x="93.666666666666686" y="132" width="206" height="36"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="3ml-2N-7a2"/>
                                         </constraints>
@@ -239,7 +239,6 @@
                                     <constraint firstItem="fwb-9K-3K8" firstAttribute="top" secondItem="isq-Qf-0td" secondAttribute="bottom" id="IbE-sW-Ado"/>
                                     <constraint firstAttribute="trailing" secondItem="fwb-9K-3K8" secondAttribute="trailing" id="LSz-SF-Tpe"/>
                                     <constraint firstItem="isq-Qf-0td" firstAttribute="centerY" secondItem="j4g-G7-4CN" secondAttribute="centerY" id="Ly3-6X-RB1"/>
-                                    <constraint firstItem="isq-Qf-0td" firstAttribute="leading" secondItem="j4g-G7-4CN" secondAttribute="leading" constant="93.666666666666686" id="QcB-4K-eAD"/>
                                     <constraint firstItem="isq-Qf-0td" firstAttribute="centerX" secondItem="fwb-9K-3K8" secondAttribute="centerX" id="Spz-p5-aG4"/>
                                     <constraint firstAttribute="height" constant="300" id="n49-b0-iHW"/>
                                     <constraint firstItem="fwb-9K-3K8" firstAttribute="leading" secondItem="j4g-G7-4CN" secondAttribute="leading" id="wOe-5a-mT8"/>
@@ -265,7 +264,7 @@
                                     <action selector="RecalculateButtonPressed:" destination="JxB-ym-vej" eventType="touchUpInside" id="WK8-i0-uzY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many persons and tips" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jer-Al-yzF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many persons and tips" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jer-Al-yzF">
                                 <rect key="frame" x="20" y="300" width="353" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="7ng-SY-hHr"/>
