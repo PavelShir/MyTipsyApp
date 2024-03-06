@@ -24,6 +24,8 @@ class ResultViewController: UIViewController {
     }
     
     @IBAction func RecalculateButtonPressed(_ sender: UIButton) {
+        guard let calculateVC = presentingViewController as? CalculateViewController else { return }
+        calculateVC.amountTextField.text = ""
         dismiss(animated: true)
     }
     

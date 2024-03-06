@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		319BE2012B9773FE005C4BBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BE2002B9773FE005C4BBE /* AppDelegate.swift */; };
 		319BE2032B9773FE005C4BBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BE2022B9773FE005C4BBE /* SceneDelegate.swift */; };
-		319BE2052B9773FE005C4BBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BE2042B9773FE005C4BBE /* ViewController.swift */; };
+		319BE2052B9773FE005C4BBE /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319BE2042B9773FE005C4BBE /* CalculateViewController.swift */; };
 		319BE2082B9773FE005C4BBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319BE2062B9773FE005C4BBE /* Main.storyboard */; };
 		319BE20A2B977400005C4BBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 319BE2092B977400005C4BBE /* Assets.xcassets */; };
 		319BE20D2B977400005C4BBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 319BE20B2B977400005C4BBE /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		319BE1FD2B9773FE005C4BBE /* MyTipsyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTipsyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		319BE2002B9773FE005C4BBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		319BE2022B9773FE005C4BBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		319BE2042B9773FE005C4BBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		319BE2042B9773FE005C4BBE /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		319BE2072B9773FE005C4BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		319BE2092B977400005C4BBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		319BE20C2B977400005C4BBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		319BE2162B977459005C4BBE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				319BE2042B9773FE005C4BBE /* ViewController.swift */,
+				319BE2042B9773FE005C4BBE /* CalculateViewController.swift */,
 				319BE2192B9774AC005C4BBE /* ResultViewController.swift */,
 			);
 			path = Controllers;
@@ -170,7 +170,7 @@
 			files = (
 				319BE21A2B9774AC005C4BBE /* ResultViewController.swift in Sources */,
 				319BE2152B977453005C4BBE /* TipsyBrain.swift in Sources */,
-				319BE2052B9773FE005C4BBE /* ViewController.swift in Sources */,
+				319BE2052B9773FE005C4BBE /* CalculateViewController.swift in Sources */,
 				319BE2012B9773FE005C4BBE /* AppDelegate.swift in Sources */,
 				319BE2032B9773FE005C4BBE /* SceneDelegate.swift in Sources */,
 			);

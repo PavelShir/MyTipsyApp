@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class CalculateViewController: UIViewController, UITextFieldDelegate {
 
     var tipsyBrain = TipsyBrain()
     
@@ -22,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         amountTextField.delegate = self
-        amountTextField.keyboardType = UIKeyboardType.numberPad
+        amountTextField.keyboardType = UIKeyboardType.decimalPad
         amountTextField.enablesReturnKeyAutomatically = false
     }
 
